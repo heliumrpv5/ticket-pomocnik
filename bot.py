@@ -5,7 +5,7 @@ from openai import OpenAI
 # --- NASTAVITVE (Tukaj vpiši svoje podatke) ---
 TOKEN = os.getenv("DISCORD_TOKEN")
 OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
-STAFF_ROLE_ID = int(os.getenv(1533932304135880804))  # Zamenkaj z ID-jem vaše staff vloge (številke)
+STAFF_ROLE_ID = int(os.getenv("STAFF_ROLE_ID", "1533932304135880804"))
 # ---------------------------------------------
 
 client_ai = OpenAI(api_key=OPENAI_API_KEY)
